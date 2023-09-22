@@ -8,7 +8,7 @@
 <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-
+<link rel="stylesheet" href="./home.css">
   
 </head>
 
@@ -18,20 +18,50 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-      <input type="text" name="age" placeholder="age" required="required" /><br>
-    	<input type="text" name="sex" placeholder="sex" required="required" /><br>
-        <input type="text" name="bmi" placeholder="bmi" required="required" /><br>
-        <input type="text" name="bp" placeholder="bp" required="required" /><br>
-        <input type="text" name="s1" placeholder="s1" required="required" /><br>
-        <input type="text" name="s2" placeholder="s2" required="required" /><br>
-        <input type="text" name="s3" placeholder="s3" required="required" /><br>
-        <input type="text" name="s4" placeholder="s4" required="required" /><br>
-        <input type="text" name="s5" placeholder="s5" required="required" /><br>
-        <input type="text" name="s6" placeholder="s6" required="required" /><br>
+        <div>
+          <label for="age">Age </label>
+          <input type="text" name="age" required="required" /><br>
+        </div>
+        <div>
+          <label for="sex"> Sex </label>
+          <input type="text" name="sex" required="required" /><br>
+        </div>
+        <div>
+          <label for="bmi"> BMI </label>
+          <input type="text" name="bmi" required="required" /><br>
+        </div>
+        <div>
+          <label for="bp"> BP </label>
+          <input type="text" name="bp" required="required" /><br>
+        </div>
+        <div>
+          <label for="s1"> S1 </label>
+          <input type="text" name="s1" required="required" /><br>
+        </div>
+        <div>
+          <label for="s1"> S2 </label>
+          <input type="text" name="s2" required="required" /><br>
+        </div>
+        <div>
+          <label for="s1"> S3 </label>
+          <input type="text" name="s3" required="required" /><br>
+        </div>
+        <div>
+          <label for="s1"> S4 </label>
+          <input type="text" name="s4" required="required" /><br>
+        </div>
+        <div>
+          <label for="s1"> S5 </label>
+          <input type="text" name="s5" required="required" /><br>
+        </div>
+        <div>
+          <label for="s1"> S6 </label>
+          <input type="text" name="s6" required="required" /><br>
+        </div>
 
        
 
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        <button type="submit">Predict</button>
     </form>
 
    <br>
@@ -39,7 +69,7 @@
   
    
  </div>
- {{prediction_text}}
+
 
 </body>
 </html>
