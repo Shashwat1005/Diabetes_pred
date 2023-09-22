@@ -1,4 +1,4 @@
-### California House Pricing Prediction
+### Diabetes Prediction
 
 ### Software And Tools Requirements
 
